@@ -13,6 +13,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "hono": "^3.7.2"
+    "hono": "^3.7.2",
+    "workers-qb": "^1.1.1"
   }
 }
