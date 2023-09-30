@@ -25,8 +25,15 @@ export interface Env {
 	// MY_QUEUE: Queue;
 }
 
+const headers = new Headers({
+	'content-type': 'application/json'
+});
+
+
 export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		return new Response('Hello World!');
-	},
+		return new Response(JSON.stringify({ values: [1, 2, 3] }), { headers });
+
+	}
 };
+
